@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ConfigLayoutSchema.xsd">
+    <hlayout id="hlayout02">
+        <vlayout id="vlayout03" border="true">
+            <topic id="topic01">topic01</topic>
+
+            <toggle id="enableNonHostileBloodSuckToggle">
+                <contentId>toggle01</contentId>
+                <tooltip>tooltip01</tooltip>
+            </toggle>
+
+            <toggle id="enableUniversalBloodSuckToggle">
+                <contentId>toggle02</contentId>
+                <tooltip>tooltip02</tooltip>
+            </toggle>
+
+            <toggle id="enableNoBloodSuckCrimeWitnessToggle">
+                <contentId>toggle03</contentId>
+                <tooltip>tooltip03</tooltip>
+            </toggle>
+
+            <toggle id="enableNoBloodSuckVictimDebuffsToggle">
+                <contentId>toggle04</contentId>
+                <tooltip>tooltip04</tooltip>
+            </toggle>
+
+            <toggle id="enableNoWeakToSunlightToggle">
+                <contentId>toggle05</contentId>
+                <tooltip>tooltip05</tooltip>
+            </toggle>
+
+            <toggle id="enableNoBatTransformCooldownToggle">
+                <contentId>toggle06</contentId>
+                <tooltip>tooltip06</tooltip>
+            </toggle>
+        </vlayout>
+    </hlayout>
+</config>

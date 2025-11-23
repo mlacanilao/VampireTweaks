@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Meta>
+    <title>Vampire Tweaks</title>
+    <id>omegaplatinum.elin.vampiretweaks</id>
+    <author>OmegaPlatinum</author>
+    <loadPriority>100</loadPriority>
+    <description>
+        Adds vampire tweaks such as friendly blood sucking, unrestricted feeding, crime-free feeding, sunlight immunity, instant bat transformation reuse, and a craftable Blood Whip that enables UID rerolling and blood meal previews.
+        吸血行動の改善、対象制限の解除、日光弱点の無効化、蝙蝠変容の即再使用、そしてUID再割り当てと血液料理プレビューが可能なクラフト式「血の鞭」など、吸血鬼のゲームプレイ体験を大幅に強化します。
+
+        [h1] Features [/h1]
+        [list]
+        [*] Non-Hostile Blood Suck: Blood Suck no longer causes hostility.
+        [*] Universal Blood Suck: Feed on any target regardless of restrictions.
+        [*] No Crime Witness: Feeding will not be reported as a crime.
+        [*] Remove Victim Debuffs: Bleed, Confusion, Dim, Paralysis, and Insanity are cleared immediately.
+        [*] Disable Sunlight Weakness: Vampires are no longer weakened or damaged by sunlight.
+        [*] No Bat Transform Cooldown: Bat Transformation can be reused immediately.
+        [*] Blood Whip: A special whip that rerolls the target’s UID for feeding effects, shows the generated meal and its elements in chat, and can be crafted at the Workbench.
+        [/list]
+
+        [h1] Configuration Options [/h1]
+        [list]
+        [*] Enable Non-Hostile Blood Suck
+        [*] Enable Universal Blood Suck
+        [*] Enable No Blood Suck Crime Witness
+        [*] Enable No Blood Suck Victim Debuffs
+        [*] Enable No Weak to Sunlight
+        [*] Enable No Bat Transform Cooldown
+        [*] Blood Whip UID Map
+        [/list]
+
+        [h1] Compatibility [/h1]
+        Compatible with existing save files.
+
+        [h1] Configuration File Location [/h1]
+        [code] Steam\steamapps\common\Elin\BepInEx\config\omegaplatinum.elin.vampiretweaks.cfg [/code]
+
+        [img] https://img.shields.io/badge/Supports%20Game%20Version-EA%2023.237%20Stable-green [/img]
+
+        [h1] 特徴 [/h1]
+        [list]
+        [*] 吸血しても対象が敵対しなくなります。
+        [*] 吸血対象の制限を撤廃し、誰にでも吸血できます。
+        [*] 吸血が犯罪として通報されなくなります。
+        [*] 流血・混乱・朦朧・麻痺・狂気のデバフが即座に解除されます。
+        [*] 吸血鬼が日光による弱体化やダメージを受けなくなります。
+        [*] 蝙蝠変容のクールダウンがなくなり、再使用がすぐ可能になります。
+        [*] 対象のUIDを再割り当てする血の鞭を追加し、生成される血液料理の情報をチャットに表示します。作業台でクラフト可能です。
+        [/list]
+
+        [h1] 設定項目 [/h1]
+        [list]
+        [*] 吸血を非敵対行動にする
+        [*] 吸血対象の制限を解除する
+        [*] 吸血の犯罪通報を無効化する
+        [*] 吸血後のデバフを解除する
+        [*] 日光弱点を無効化する
+        [*] 蝙蝠変容クールダウン無効化
+        [*] 血の鞭UIDマッピング
+        [/list]
+
+        [h1] 互換性 [/h1]
+        既存のセーブデータと互換性があります。
+
+        [h1] 設定ファイルの場所 [/h1]
+        [code] Steam\steamapps\common\Elin\BepInEx\config\omegaplatinum.elin.vampiretweaks.cfg [/code]
+
+        [img] https://img.shields.io/badge/対応ゲームバージョン-EA%2023.237%20Stable-green [/img]
+    </description>
+    <tags>General,Balance,Cheat</tags>
+    <visibility>Public</visibility>
+    <version>0.23.237</version>
+</Meta>

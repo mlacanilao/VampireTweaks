@@ -13,7 +13,7 @@
         [*] Non-Hostile Blood Suck: Blood Suck no longer causes hostility.
         [*] Universal Blood Suck: Feed on any target regardless of restrictions.
         [*] No Crime Witness: Feeding will not be reported as a crime.
-        [*] Remove Victim Debuffs: Bleed, Confusion, Dim, Paralysis, and Insanity are cleared immediately.
+        [*] Prevent Victim Debuffs: Bleed, Confusion, Dim, Paralysis, and Insanity are prevented from being applied.
         [*] Disable Sunlight Weakness: Vampires are no longer weakened or damaged by sunlight.
         [*] No Bat Transform Cooldown: Bat Transformation can be reused immediately.
         [*] Blood Whip: A special whip that rerolls the target’s UID for feeding effects, shows the generated meal and its elements in chat, and can be crafted at the Workbench.
@@ -43,7 +43,7 @@
         [*] 吸血しても対象が敵対しなくなります。
         [*] 吸血対象の制限を撤廃し、誰にでも吸血できます。
         [*] 吸血が犯罪として通報されなくなります。
-        [*] 流血・混乱・朦朧・麻痺・狂気のデバフが即座に解除されます。
+        [*] 流血・混乱・朦朧・麻痺・狂気のデバフが付与されなくなります。
         [*] 吸血鬼が日光による弱体化やダメージを受けなくなります。
         [*] 蝙蝠変容のクールダウンがなくなり、再使用がすぐ可能になります。
         [*] 対象のUIDを再割り当てする血の鞭を追加し、生成される血液料理の情報をチャットに表示します。作業台でクラフト可能です。

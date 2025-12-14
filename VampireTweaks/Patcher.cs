@@ -41,13 +41,6 @@ namespace VampireTweaks
             CharaPatch.RefreshPostfix(__instance: __instance);
         }
         
-        [HarmonyTranspiler]
-        [HarmonyPatch(declaringType: typeof(CraftUtil), methodName: nameof(CraftUtil.MakeBloodMeal))]
-        internal static IEnumerable<CodeInstruction> CraftUtilMakeBloodMeal(IEnumerable<CodeInstruction> instructions)
-        {
-            return CraftUtilPatch.MakeBloodMealTranspiler(instructions: instructions);
-        }
-        
         [HarmonyPrefix]
         [HarmonyPatch(declaringType: typeof(Chara), methodName: nameof(Chara.AddCooldown))]
         internal static bool CharaAddCooldown(int idEle, int turns)

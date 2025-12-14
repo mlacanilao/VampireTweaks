@@ -13,8 +13,6 @@ namespace VampireTweaks
         internal static ConfigEntry<bool> EnableNoBloodSuckVictimDebuffs;
         internal static ConfigEntry<bool> EnableNoWeakToSunlight;
         internal static ConfigEntry<bool> EnableNoBatTransformCooldown;
-        internal static ConfigEntry<string> BloodWhipUidMapRaw;
-        internal static readonly Dictionary<int, int> BloodWhipUidMap = new Dictionary<int, int>();
 
         public static string XmlPath { get; private set; }
         public static string TranslationXlsxPath { get; private set; }
@@ -83,23 +81,6 @@ namespace VampireTweaks
                 "蝙蝠変容のクールダウンを無効化します。\n" +
                 "移除蝙蝠变形的冷却时间。"
             );
-            
-            BloodWhipUidMapRaw = config.Bind(
-                section: ModInfo.Name,
-                key: "Blood Whip UID Map",
-                defaultValue: string.Empty,
-                description:
-                "Mapping from original UID to rerolled UID. Format: old:new;old2:new2\n" +
-                "UID の再割り当てを定義します。\n" +
-                "用于定义原始 UID 到重新分配 UID 的映射。"
-            );
-            
-            ReloadBloodWhipUidMap();
-            
-            BloodWhipUidMapRaw.SettingChanged += (_, __) =>
-            {
-                ReloadBloodWhipUidMap();
-            };
         }
         
         public static void InitializeXmlPath(string xmlPath)
@@ -124,32 +105,6 @@ namespace VampireTweaks
             {
                 TranslationXlsxPath = string.Empty;
             }
-        }
-        
-        internal static void ReloadBloodWhipUidMap()
-        {
-            BloodWhipUidMap.Clear();
-            var raw = BloodWhipUidMapRaw.Value;
-            if (string.IsNullOrWhiteSpace(value: raw))
-            {
-                return;
-            }
-            foreach (var pair in raw.Split(separator: ';'))
-            {
-                var kv = pair.Split(separator: ':');
-                if (kv.Length == 2 &&
-                    int.TryParse(s: kv[0], result: out var oldUid) &&
-                    int.TryParse(s: kv[1], result: out var newUid))
-                {
-                    BloodWhipUidMap[key: oldUid] = newUid;
-                }
-            }
-        }
-        
-        internal static void SaveBloodWhipUidMap()
-        {
-            BloodWhipUidMapRaw.Value =
-                string.Join(separator: ";", values: BloodWhipUidMap.Select(selector: kv => $"{kv.Key}:{kv.Value}"));
         }
     }
 }

@@ -1,5 +1,3 @@
-using VampireTweaks;
-
 public class TraitOmegaWhipBlood : TraitWhipLove
 {
     public override void OnCreate(int lv)
@@ -27,12 +25,29 @@ public class TraitOmegaWhipBlood : TraitWhipLove
                         EClass.pc.PlaySound(id: "whip", v: 1f, spatial: true);
                         target.PlayAnime(id: AnimeID.Shiver, force: false);
 
-                        VampireTweaksUtils.GetOrCreateRerolledUid(originalUid: target.uid);
+                        Thing thing = ThingGen.Create(id: "1300");
                         
-                        VampireTweaksUtils.AnnounceBloodMeal(
-                            sucker: EClass.pc,
-                            feeder: target
-                        );
+                        if (thing is null)
+                        {
+                            return false;
+                        }
+                        
+                        TraitDrink trait = thing.trait as TraitDrink;
+
+                        if (trait is null)
+                        {
+                            return false;
+                        }
+                        
+                        ActEffect.Proc(id: trait.IdEffect, power: trait.Power, state: trait.owner.blessedState, cc: target, tc: null, actRef: new ActRef
+                        {
+                            n1 = trait.N1,
+                            isPerfume = (trait is TraitPerfume),
+                            refThing = trait.owner.Thing,
+                            act = ((trait.source != null && trait.source.id != 0) ? ACT.Create(row: trait.source) : null)
+                        });
+                        
+                        EClass.pc.PickOrDrop(p: EClass.pc.pos, t: CraftUtil.MakeBloodSample(sucker: EClass.pc, feeder: target), msg: true);
 
                         this.owner.ModCharge(a: -1, destroy: false);
                         if (this.owner.c_charges <= 0)

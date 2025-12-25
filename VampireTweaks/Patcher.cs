@@ -47,5 +47,12 @@ namespace VampireTweaks
         {
             return CharaPatch.AddCooldownPrefix(idEle: idEle, turns: turns);
         }
+        
+        [HarmonyPostfix]
+        [HarmonyPatch(declaringType: typeof(ConVampire), methodName: nameof(ConVampire.Tick))]
+        internal static void ConVampireTick()
+        {
+            ConVampirePatch.TickPostfix();
+        }
     }
 }

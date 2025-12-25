@@ -9,7 +9,7 @@ namespace VampireTweaks
     {
         internal const string Guid = "omegaplatinum.elin.vampiretweaks";
         internal const string Name = "Vampire Tweaks";
-        internal const string Version = "1.1.0";
+        internal const string Version = "1.2.0";
         internal const string ModOptionsGuid = "evilmask.elinplugins.modoptions";
         internal const string ModOptionsAssemblyName = "ModOptions";
     }

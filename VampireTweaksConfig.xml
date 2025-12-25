@@ -33,6 +33,11 @@
                 <contentId>toggle06</contentId>
                 <tooltip>tooltip06</tooltip>
             </toggle>
+
+            <toggle id="enableNightVisionAtNightToggle">
+                <contentId>toggle07</contentId>
+                <tooltip>tooltip07</tooltip>
+            </toggle>
         </vlayout>
     </hlayout>
 </config>

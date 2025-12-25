@@ -18,6 +18,7 @@
         [*] Disable Sunlight Weakness: Vampires are no longer weakened or damaged by sunlight.
         [*] No Bat Transform Cooldown: Bat Transformation can be reused immediately.
         [*] Blood Whip: A craftable whip that applies the Elixir of Blood effect to change the target’s blood and uses the Syringe of Blood Draw to create a blood sample.
+        [*] Night Vision at Night: Automatically grants Night Vision (Cat’s Eye) while it is night.
         [/list]
 
         [h1] Configuration Options [/h1]
@@ -28,6 +29,7 @@
         [*] Enable No Blood Suck Victim Debuffs
         [*] Enable No Weak to Sunlight
         [*] Enable No Bat Transform Cooldown
+        [*] Enable Night Vision At Night
         [/list]
 
         [h1] Compatibility [/h1]
@@ -36,7 +38,7 @@
         [h1] Configuration File Location [/h1]
         [code] Steam\steamapps\common\Elin\BepInEx\config\omegaplatinum.elin.vampiretweaks.cfg [/code]
 
-        [img] https://img.shields.io/badge/Supports%20Game%20Version-EA%2023.247%20Stable-green [/img]
+        [img] https://img.shields.io/badge/Supports%20Game%20Version-EA%2023.252%20Stable-green [/img]
 
         [h1] 特徴 [/h1]
         [list]
@@ -47,6 +49,7 @@
         [*] 吸血鬼が日光による弱体化やダメージを受けなくなります。
         [*] 蝙蝠変容のクールダウンがなくなり、再使用がすぐ可能になります。
         [*] 血のエリクシルの効果で血液を変化させ、同時に採血して血液サンプルを生成する血の鞭を追加します。作業台でクラフト可能です。
+        [*] 夜間になると自動的に暗視（猫の目）が付与されます。
         [/list]
 
         [h1] 設定項目 [/h1]
@@ -57,6 +60,7 @@
         [*] 吸血後のデバフを解除する
         [*] 日光弱点を無効化する
         [*] 蝙蝠変容クールダウン無効化
+        [*] 夜間暗視を有効にする
         [/list]
 
         [h1] 互換性 [/h1]
@@ -65,9 +69,9 @@
         [h1] 設定ファイルの場所 [/h1]
         [code] Steam\steamapps\common\Elin\BepInEx\config\omegaplatinum.elin.vampiretweaks.cfg [/code]
 
-        [img] https://img.shields.io/badge/対応ゲームバージョン-EA%2023.247%20Stable-green [/img]
+        [img] https://img.shields.io/badge/対応ゲームバージョン-EA%2023.252%20Stable-green [/img]
     </description>
     <tags>General,Balance,Cheat</tags>
     <visibility>Public</visibility>
-    <version>0.23.247</version>
+    <version>0.23.252</version>
 </Meta>

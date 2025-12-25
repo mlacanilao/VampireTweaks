@@ -13,6 +13,7 @@ namespace VampireTweaks
         internal static ConfigEntry<bool> EnableNoBloodSuckVictimDebuffs;
         internal static ConfigEntry<bool> EnableNoWeakToSunlight;
         internal static ConfigEntry<bool> EnableNoBatTransformCooldown;
+        internal static ConfigEntry<bool> EnableNightVisionAtNight;
 
         public static string XmlPath { get; private set; }
         public static string TranslationXlsxPath { get; private set; }
@@ -80,6 +81,16 @@ namespace VampireTweaks
                 "Removes the cooldown for Bat Transformation.\n" +
                 "蝙蝠変容のクールダウンを無効化します。\n" +
                 "移除蝙蝠变形的冷却时间。"
+            );
+            
+            EnableNightVisionAtNight = config.Bind(
+                section: ModInfo.Name,
+                key: "Enable Night Vision at Night",
+                defaultValue: false,
+                description:
+                "Grants Night Vision (Cat's Eye) automatically while it is night.\n" +
+                "夜間になると自動的に暗視（猫の目）を付与します。\n" +
+                "在夜间自动赋予夜视（猫之眼）效果。"
             );
         }
         

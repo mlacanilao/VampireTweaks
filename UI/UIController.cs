@@ -87,6 +87,13 @@ namespace VampireTweaks
                 {
                     VampireTweaksConfig.EnableNoBatTransformCooldown.Value = isChecked;
                 };
+                
+                var enableNightVisionAtNightToggle = builder.GetPreBuild<OptToggle>(id: "enableNightVisionAtNightToggle");
+                enableNightVisionAtNightToggle.Checked = VampireTweaksConfig.EnableNightVisionAtNight.Value;
+                enableNightVisionAtNightToggle.OnValueChanged += isChecked =>
+                {
+                    VampireTweaksConfig.EnableNightVisionAtNight.Value = isChecked;
+                };
             };
         }
     }
